@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Feliz - Cuidamos do seu melhor amigo</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <i class="fa-solid fa-paw"></i> Pet Feliz
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#servicos" class="nav__link">Serviços</a>
+        </li>
+        <li class="nav__item">
+          <a href="#planos" class="nav__link">Planos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contato" class="nav__link">Contato</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contato" class="nav__link nav__link--btn">
+            <i class="fa-solid fa-calendar-check"></i> Agendar
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero__bg-shapes">
+        <span class="shape shape--1"></span>
+        <span class="shape shape--2"></span>
+        <span class="shape shape--3"></span>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__eyebrow">
+            <i class="fa-solid fa-heart"></i> Bem-vindo ao Pet Feliz
+          </span>
+          <h1 class="hero__title">
+            Cuidamos do seu <span class="highlight">melhor amigo</span> com carinho e segurança.
+          </h1>
+          <p class="hero__text">
+            Banho, tosa, consultas veterinárias e produtos de qualidade para seu pet. Agende online e garanta o melhor para quem você ama.
+          </p>
+          <div class="hero__buttons">
+            <a href="#contato" class="btn btn--primary">
+              <i class="fa-solid fa-calendar-check"></i> Agendar Serviço
+            </a>
+            <a href="#servicos" class="btn btn--outline">
+              Saiba Mais <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <strong>+2.000</strong>
+              <span>Pets atendidos</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <strong>98%</strong>
+              <span>Clientes satisfeitos</span>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat">
+              <strong>5★</strong>
+              <span>Avaliação média</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <div class="hero__card hero__card--float">
+            <i class="fa-solid fa-shield-heart"></i>
+            <span>Cuidado 100% seguro</span>
+          </div>
+          <div class="hero__img-wrapper">
+            <div class="hero__emoji-display">
+              <span class="big-emoji">🐶</span>
+              <span class="big-emoji">🐱</span>
+              <span class="big-emoji">🐰</span>
+            </div>
+            <p class="hero__img-caption">Todos os pets são bem-vindos!</p>
+          </div>
+          <div class="hero__card hero__card--float hero__card--right">
+            <i class="fa-solid fa-star"></i>
+            <span>Equipe especializada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">O que oferecemos</span>
+          <h2 class="section-title">Nossos Serviços</h2>
+          <p class="section-subtitle">Tudo que seu pet precisa em um só lugar, com profissionais apaixonados pelo que fazem.</p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-shower"></i>
+            </div>
+            <h3 class="service-card__title">🐶 Banho e Tosa</h3>
+            <p class="service-card__text">
+              Higiene completa para seu pet com produtos de qualidade, deixando seu amigo cheiroso e bonito.
+            </p>
+            <a href="#planos" class="service-card__link">Ver planos <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card service-card--featured">
+            <div class="service-card__badge">Mais popular</div>
+            <div class="service-card__icon">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3 class="service-card__title">🐱 Consulta Veterinária</h3>
+            <p class="service-card__text">
+              Atendimento especializado com veterinários experientes para garantir a saúde e bem-estar do seu pet.
+            </p>
+            <a href="#contato" class="service-card__link">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3 class="service-card__title">🦴 Loja de Produtos</h3>
+            <p class="service-card__text">
+              Rações premium, brinquedos e acessórios selecionados para o conforto e alegria do seu companheiro.
+            </p>
+            <a href="#contato" class="service-card__link">Conhecer <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">O que dizem nossos clientes</span>
+          <h2 class="section-title">Cada cliente importa!</h2>
+          <p class="section-subtitle">Veja o que quem já passou pela Pet Feliz tem a dizer.</p>
+        </div>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Meu cachorro sempre volta feliz e bem cuidado. A equipe trata todos os pets com muito carinho, como se fossem seus próprios."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MS</div>
+              <div>
+                <strong>Maria Silva</strong>
+                <span>Tutora do Bolinha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--accent">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Excelente atendimento e profissionais muito atenciosos. Minha gatinha ficou super tranquila durante toda a consulta."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">JS</div>
+              <div>
+                <strong>João Santos</strong>
+                <span>Tutor da Mia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-card__text">
+              "Ótimo custo-benefício nos planos! Meu cachorro faz o banho toda semana e a economia com o plano VIP valeu muito a pena."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AC</div>
+              <div>
+                <strong>Ana Costa</strong>
+                <span>Tutora do Rex</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="planos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Nossos planos</span>
+          <h2 class="section-title">Escolha o melhor para seu pet</h2>
+          <p class="section-subtitle">Planos pensados para diferentes necessidades. Sem surpresas na conta.</p>
+        </div>
+
+        <div class="plans__grid">
+          
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <span class="plan-card__name">Básico</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">29</span>
+                <span class="plan-card__cents">,90</span>
+              </div>
+              <span class="plan-card__period">por mês</span>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> Banho mensal</li>
+              <li><i class="fa-solid fa-check"></i> Secagem profissional</li>
+              <li><i class="fa-solid fa-check"></i> Perfume especial</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Tosa</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Consulta veterinária</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--full">Começar agora</a>
+          </div>
+
+          
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__badge">
+              <i class="fa-solid fa-crown"></i> Mais escolhido
+            </div>
+            <div class="plan-card__header">
+              <span class="plan-card__name">Premium</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">59</span>
+                <span class="plan-card__cents">,90</span>
+              </div>
+              <span class="plan-card__period">por mês</span>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> Banho e tosa</li>
+              <li><i class="fa-solid fa-check"></i> Secagem profissional</li>
+              <li><i class="fa-solid fa-check"></i> Perfume especial</li>
+              <li><i class="fa-solid fa-check"></i> 10% desconto em produtos</li>
+              <li class="disabled"><i class="fa-solid fa-xmark"></i> Consulta veterinária</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--full">Começar agora</a>
+          </div>
+
+    
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <span class="plan-card__name">VIP</span>
+              <div class="plan-card__price">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__value">99</span>
+                <span class="plan-card__cents">,90</span>
+              </div>
+              <span class="plan-card__period">por mês</span>
+            </div>
+            <ul class="plan-card__features">
+              <li><i class="fa-solid fa-check"></i> Banho e tosa ilimitados</li>
+              <li><i class="fa-solid fa-check"></i> Consulta veterinária mensal</li>
+              <li><i class="fa-solid fa-check"></i> 20% desconto em produtos</li>
+              <li><i class="fa-solid fa-check"></i> Atendimento prioritário</li>
+              <li><i class="fa-solid fa-check"></i> Relatório de saúde mensal</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--full">Começar agora</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <span class="section-eyebrow">Fale conosco</span>
+            <h2 class="section-title">Entre em contato</h2>
+            <p class="section-subtitle">
+              Agende um serviço, tire dúvidas ou conheça nossos planos. Estamos aqui para ajudar!
+            </p>
+            <div class="contact__details">
+              <div class="contact__detail">
+                <i class="fa-solid fa-phone"></i>
+                <span>(11) 9 9999-9999</span>
+              </div>
+              <div class="contact__detail">
+                <i class="fa-solid fa-envelope"></i>
+                <span>contato@petfeliz.com.br</span>
+              </div>
+              <div class="contact__detail">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Rua dos Pets, 123 – São Paulo, SP</span>
+              </div>
+              <div class="contact__detail">
+                <i class="fa-solid fa-clock"></i>
+                <span>Seg–Sáb: 8h às 18h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(11) 9 0000-0000" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                <span id="btn-text"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</span>
+                <span id="btn-loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Enviando...</span>
+              </button>
+
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <i class="fa-solid fa-paw"></i> Pet Feliz
+          </a>
+          <p>Cuidando do seu melhor amigo com amor, carinho e profissionalismo desde 2018.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">🐶 Banho e Tosa</a></li>
+            <li><a href="#servicos">🩺 Veterinário</a></li>
+            <li><a href="#servicos">🦴 Loja de Produtos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Contato</h4>
+          <p><i class="fa-solid fa-phone"></i> (11) 9 9949-6068</p>
+          <p><i class="fa-solid fa-envelope"></i> contato@petfeliz.com.br</p>
+          <p><i class="fa-solid fa-location-dot"></i> Rua Fortaleza, 803<br>Cascavel – PR</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Pet Feliz. Todos os direitos reservados.</p>
+        <p>Feito com <i class="fa-solid fa-heart"></i> para os pets</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

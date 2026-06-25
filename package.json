@@ -1,0 +1,8 @@
+{
+  "name": "pet-feliz",
+  "version": "1.0.0",
+  "description": "Landing page Pet Feliz - Trabalho faculdade",
+  "dependencies": {
+    "nodemailer": "^6.9.9"
+  }
+}
