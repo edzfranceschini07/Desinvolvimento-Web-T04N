@@ -91,7 +91,7 @@ form.addEventListener('submit', async (e) => {
   hideFeedback();
 
   try {
-    const response = await fetch('/.netlify/functions/send-email', {
+    const response = await fetch('/.netlify/functions/send-email.js', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
